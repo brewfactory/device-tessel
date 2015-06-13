@@ -21,7 +21,8 @@
   "homepage": "https://github.com/brewfactory/device-tessel#readme",
   "pre-commit": [
     "jshint",
-    "jscs"
+    "jscs",
+    "test"
   ],
   "engines": {
     "node": "0.12.4"
