@@ -37,5 +37,8 @@
     "pre-commit": "^1.0.10",
     "sinon": "^1.15.3",
     "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "lodash": "^3.9.3"
   }
 }
