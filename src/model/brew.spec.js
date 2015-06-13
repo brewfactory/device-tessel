@@ -1,5 +1,5 @@
 var Brew = require('./brew');
-var BrewPhase = require('./BrewPhase');
+var BrewPhase = require('./brewPhase');
 var expect = require('chai').expect;
 
 describe('Brew model', function() {
