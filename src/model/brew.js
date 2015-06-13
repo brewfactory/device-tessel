@@ -16,10 +16,10 @@ function Brew(options) {
 }
 
 /**
- * @method getActualPhase
+ * @method getActivePhase
  * @return {Object} phase
  */
-Brew.prototype.getActualPhase = function() {
+Brew.prototype.getActivePhase = function() {
   return _.find(this.phases, function(phase) {
     return INPROGRESS_STATUSES.indexOf(phase.status) > -1;
   });

@@ -3,9 +3,9 @@ var BrewPhase = require('./BrewPhase');
 var expect = require('chai').expect;
 
 describe('Brew model', function() {
-  describe('get actual phase', function() {
+  describe('get active phase', function() {
     it('should find the phase in progress', function() {
-      var actualPhase = new BrewPhase({
+      var activePhase = new BrewPhase({
         min: 10,
         temp: 50,
         status: 'active'
@@ -20,11 +20,11 @@ describe('Brew model', function() {
       var brew = new Brew({
         name: 'Very IPA',
         startDate: new Date(),
-        phases: [actualPhase, scheduledPhase]
+        phases: [activePhase, scheduledPhase]
       });
 
-      var actual = brew.getActualPhase();
-      expect(actual).to.be.eql(actualPhase);
+      var active = brew.getActivePhase();
+      expect(active).to.be.eql(activePhase);
     });
 
     it('should handle when there is no phase in progress', function() {
@@ -46,8 +46,8 @@ describe('Brew model', function() {
         phases: [scheduledPhase1, scheduledPhase2]
       });
 
-      var actual = brew.getActualPhase();
-      expect(actual).to.be.undefined;
+      var active = brew.getActivePhase();
+      expect(active).to.be.undefined;
     });
   });
 });
