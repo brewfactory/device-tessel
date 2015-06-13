@@ -1,0 +1,33 @@
+{
+  "name": "device-tessel",
+  "version": "1.0.0",
+  "description": "Tessel device connector for Brewfactory",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jscs": "jscs src",
+    "jshint": "jshint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brewfactory/device-tessel.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brewfactory/device-tessel/issues"
+  },
+  "homepage": "https://github.com/brewfactory/device-tessel#readme",
+  "pre-commit": [
+    "jshint",
+    "jscs"
+  ],
+  "engines": {
+    "node": "0.12.4"
+  },
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0",
+    "pre-commit": "^1.0.10"
+  }
+}
