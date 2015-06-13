@@ -27,10 +27,14 @@
     "node": "0.12.4"
   },
   "devDependencies": {
+    "chai": "^3.0.0",
+    "chai-subset": "^1.0.1",
     "istanbul": "^0.3.15",
     "jscs": "^1.13.1",
     "jshint": "^2.8.0",
     "mocha": "^2.2.5",
-    "pre-commit": "^1.0.10"
+    "pre-commit": "^1.0.10",
+    "sinon": "^1.15.3",
+    "sinon-chai": "^2.8.0"
   }
 }
