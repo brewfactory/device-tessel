@@ -1,5 +1,5 @@
 /**
- * @class Brew
+ * @class BrewPhase
  * @constructs
  * @param {Object} options
  */
