@@ -30,8 +30,6 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "chai-subset": "^1.0.1",
-    "grunt": "^0.4.5",
-    "grunt-tessel": "^1.1.0",
     "istanbul": "^0.3.15",
     "jscs": "^1.13.1",
     "jshint": "^2.8.0",
@@ -46,8 +44,6 @@
   "hardware": {
     "chai": false,
     "chai-subset": false,
-    "grunt": false,
-    "grunt-tessel": false,
     "istanbul": false,
     "jscs": false,
     "jshint": false,
