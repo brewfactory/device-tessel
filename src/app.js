@@ -3,7 +3,7 @@ var temperature = require('./module/temperature');
 /*
  * @method run
  */
-function run () {
+function run() {
   if (temperature.getActual() < 0) {
     throw new Error('Temperature is negative');
   }

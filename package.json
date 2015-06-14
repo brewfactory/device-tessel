@@ -2,9 +2,9 @@
   "name": "device-tessel",
   "version": "1.0.0",
   "description": "Tessel device connector for Brewfactory",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node index.js",
     "jscs": "jscs src",
     "jshint": "jshint src",
     "test": "NODE_ENV=test mocha $(find src -name \"*.spec.js\")",
@@ -30,6 +30,8 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "chai-subset": "^1.0.1",
+    "grunt": "^0.4.5",
+    "grunt-tessel": "^1.1.0",
     "istanbul": "^0.3.15",
     "jscs": "^1.13.1",
     "jshint": "^2.8.0",
@@ -40,5 +42,18 @@
   },
   "dependencies": {
     "lodash": "^3.9.3"
+  },
+  "hardware": {
+    "chai": false,
+    "chai-subset": false,
+    "grunt": false,
+    "grunt-tessel": false,
+    "istanbul": false,
+    "jscs": false,
+    "jshint": false,
+    "mocha": false,
+    "pre-commit": false,
+    "sinon": false,
+    "sinon-chai": false
   }
 }
