@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/brewfactory/device-tessel.svg)](https://travis-ci.org/brewfactory/device-tessel)  
 
-Tessel connector for Brewfactory.
+[Tessel](https://tessel.io) connector for Brewfactory.
 
 ## How to start
 
